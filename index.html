@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conatct Me </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 20px; /* Space between forms */
+            flex-direction: row; /* Display forms in a row */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            background-color: black;
+        }
+
+        .form-container {
+            background-color:white;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            flex: 1; /* Allow forms to flex and take up space */
+            background-image: url('https://media.istockphoto.com/id/1215062102/photo/contact-us-background-for-customer-support-theme.jpg?s=170667a&w=0&k=20&c=ob28t4c3GTicLc1NDMPqvnzlmkLghscetOUzH1f_N3g=');
+        }
+        .form-container:hover {
+            background-color: #b4c00c; /* Lighter background on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .form-container h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .form-container button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+
+        .button-container .contact-btn {
+            background-color: #28a745;
+        }
+
+        .button-container .contact-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Form -->
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="tel" name="mobile_no" placeholder="Mobile No" required>
+            <input type="email" name="email" placeholder="Email ID" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Buttons Form -->
+    <div class="form-container">
+        <h2>For More Info Connect me at</h2>
+        <div class="button-container">
+            <a href="https://www.linkedin.com/in/yadneshwar-thorat-5581a3259/" target="_blank">Connect With Linkedin Profile</a>
+            <a href="https://github.com/yadnesh-thorat" target="_blank" class="contact-btn">Connect With Github</a>
+        </div>
+    </div>
+
+    
+</body>
+</html>
